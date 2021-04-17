@@ -1,7 +1,7 @@
 <template>
     <div class="h-100" v-if="data.results">
         <Nav/>
-        <Header :loader="false"/>
+        <Header :show="false"/>
         <About :data="data.results"/>
         <Services :data="data.results"/>
         <Prices :data="data.results"/>
@@ -10,7 +10,7 @@
         <Footer/>
     </div>
     <div v-else>
-        <Header :loader="true"/>
+        <Header :show="true"/>
     </div>
 
 </template>
