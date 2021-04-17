@@ -3,6 +3,7 @@
         <Nav/>
         <Header/>
         <About :data="data.results"/>
+        <Services :data="data.results"/>
     </div>
     <div v-else>
         <div class="loader"></div>
@@ -15,6 +16,7 @@ import fetchData from '@/composable/fetchData';
 import Nav from '@/components/Nav';
 import Header from "@/components/Header";
 import About from "@/components/About";
+import Services from '@/components/Services';
 
 export default {
     setup() {
@@ -25,7 +27,8 @@ export default {
     components: {
         Nav,
         Header,
-        About
+        About,
+        Services
     }
 }
 </script>
