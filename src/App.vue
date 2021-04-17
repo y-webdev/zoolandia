@@ -1,14 +1,17 @@
 <template>
     <Nav/>
+    <Header/>
 </template>
 
 <script>
 import fetchData from '@/composable/fetchData';
 import Nav from '@/components/Nav';
+import Header from "@/components/Header";
 
 export default {
     components: {
-        Nav
+        Nav,
+        Header
     },
     setup() {
         const {data, error, load} = fetchData();
