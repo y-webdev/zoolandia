@@ -5,6 +5,7 @@
         <About :data="data.results"/>
         <Services :data="data.results"/>
         <Prices :data="data.results"/>
+        <Subscription :data="data.results"/>
     </div>
     <div v-else>
         <div class="loader"></div>
@@ -19,6 +20,7 @@ import Header from "@/components/Header";
 import About from "@/components/about/About";
 import Services from '@/components/Services';
 import Prices from '@/components/prices/Prices';
+import Subscription from '@/components/Subscription';
 
 export default {
     setup() {
@@ -31,7 +33,8 @@ export default {
         Header,
         About,
         Services,
-        Prices
+        Prices,
+        Subscription
     }
 }
 </script>
