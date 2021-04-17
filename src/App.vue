@@ -4,6 +4,7 @@
         <Header/>
         <About :data="data.results"/>
         <Services :data="data.results"/>
+        <Prices :data="data.results"/>
     </div>
     <div v-else>
         <div class="loader"></div>
@@ -17,6 +18,7 @@ import Nav from '@/components/Nav';
 import Header from "@/components/Header";
 import About from "@/components/About";
 import Services from '@/components/Services';
+import Prices from '@/components/Prices';
 
 export default {
     setup() {
@@ -28,7 +30,8 @@ export default {
         Nav,
         Header,
         About,
-        Services
+        Services,
+        Prices
     }
 }
 </script>
