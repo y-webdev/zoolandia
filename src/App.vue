@@ -7,6 +7,7 @@
         <Prices :data="data.results"/>
         <Subscription :data="data.results"/>
         <Contacts :data="data.results"/>
+        <Footer/>
     </div>
     <div v-else>
         <div class="loader"></div>
@@ -23,6 +24,7 @@ import Services from '@/components/Services';
 import Prices from '@/components/prices/Prices';
 import Subscription from '@/components/Subscription';
 import Contacts from '@/components/Contacts';
+import Footer from '@/components/Footer';
 
 export default {
     setup() {
@@ -37,7 +39,8 @@ export default {
         Services,
         Prices,
         Subscription,
-        Contacts
+        Contacts,
+        Footer
     }
 }
 </script>
