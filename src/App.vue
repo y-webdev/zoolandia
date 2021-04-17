@@ -16,9 +16,9 @@
 import fetchData from '@/composable/fetchData';
 import Nav from '@/components/Nav';
 import Header from "@/components/Header";
-import About from "@/components/About";
+import About from "@/components/about/About";
 import Services from '@/components/Services';
-import Prices from '@/components/Prices';
+import Prices from '@/components/prices/Prices';
 
 export default {
     setup() {
